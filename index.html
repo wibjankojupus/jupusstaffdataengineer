@@ -248,7 +248,7 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
     <span class="pill-dark"><span class="dot-live"></span>Now Hiring &middot; Remote &middot; CET &plusmn;2</span>
     <div class="section-label" style="margin-top:1.4rem;">Candidate Information Pack</div>
     <h1>Staff Data Engineer</h1>
-    <p class="hero-sub">Own the data platform behind how a fast-growing legal AI company runs itself: ClickHouse, dbt, and the definitions behind the numbers that reach our board. The platform already exists and works. Making it trustworthy is the job.</p>
+    <p class="hero-sub">Own the data platform behind how a fast-growing legal AI company runs itself: ClickHouse, dbt, and the definitions behind the numbers that reach our board. The platform already exists and works. No one owns whether it is right.</p>
     <div class="hero-btns">
       <a class="btn-primary" href="https://you.ashbyhq.com/meeting/2d09c6a0-be70-4c8f-9ffe-9ddb57a33e6f/">Book a Call with Wib</a>
       <a class="btn-ghost-dark" href="#role">Explore the Role</a>
@@ -411,7 +411,7 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
     </div>
     <div class="focus-note">
       <span class="label-caps" style="color:var(--purple);">Your focus: all three</span>
-      <p style="margin-top:.5rem;">There is no single module for this role. Every one of these products emits the usage data that lands in the warehouse, and the metrics you would own are built from all of it. Understanding how product events turn into a number the board looks at is the whole job.</p>
+      <p style="margin-top:.5rem;">There is no single module for this role. Every one of these products emits the usage data that lands in the warehouse, and the metrics you would own are built from all of it. You would trace an event from the moment it fires in the product to the figure on a board slide.</p>
     </div>
   </div>
 </section>
@@ -422,7 +422,7 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
       <div class="section-label">The role</div>
       <h2 class="section-title">Own the numbers a company <em>runs on</em></h2>
       <p class="lede">Our data platform runs on ClickHouse with dbt on top, Python extract-load pipelines feeding an S3 data lake, and orchestration in GitHub Actions. It works, and it has grown quickly. That means this is modernisation and consolidation work, not a greenfield build and not a maintenance seat.</p>
-      <p class="lede">The other half of the role is definitional. Our customer health score is a multi-component weighted metric with feature gating, dynamic reweighting and seat scaling, and it reaches the board. We want someone who will own its meaning as well as its SQL: definition, denominator, eligibility rules, known limitations, written down once and authoritatively, with the open questions named rather than smoothed over.</p>
+      <p class="lede">Our customer health score is a multi-component weighted metric with feature gating, dynamic reweighting and seat scaling, and it reaches the board. You would own its meaning as well as its SQL: definition, denominator, eligibility rules, known limitations, written down once and authoritatively, with the open questions named rather than smoothed over.</p>
       <p class="lede">You would report to our Head of Engineering and work alongside a colleague who owns the business-facing side of data, plus our infrastructure and application engineers. This is a senior individual contributor role with no line management in either direction.</p>
     </div>
     <div>
@@ -438,11 +438,11 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
   <div class="container">
     <div class="section-label">Who we are looking for</div>
     <h2 class="section-title">A specialist role with <em>a high bar</em></h2>
-    <p class="lede">We would rather be honest about the bar than waste your evening. One requirement below is genuinely non-negotiable, and it rules out most of the market.</p>
+    <p class="lede">One requirement below is non-negotiable: ClickHouse in production.</p>
     <div class="gate">
       <span class="pill">Hard requirement</span>
       <h3 style="margin-top:.9rem;">ClickHouse in production, owned rather than queried</h3>
-      <p>Not &ldquo;I have used Snowflake or BigQuery and it is similar.&rdquo; We will want to talk about quotas, table engines, partitioning, and a time a query cost got away from you. Having read the documentation does not count, and we will not advance a profile on the promise of ramping up. Everything else on this page is negotiable. This is not.</p>
+      <p>Not &ldquo;I have used Snowflake or BigQuery and it is similar.&rdquo; We will want to talk about quotas, table engines, partitioning, and a time a query cost got away from you. We will not advance a profile on the promise of ramping up. Everything else on this page is negotiable.</p>
       <div class="gate-pills">
         <span class="pill">ClickHouse</span>
         <span class="pill">dbt</span>
@@ -458,7 +458,7 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
         <ul class="dotlist"><li><span class="dot dot-green"></span><span><b>ClickHouse in production.</b> You have operated it, not just queried it.</span></li>
           <li><span class="dot dot-green"></span><span><b>dbt at ownership level:</b> incremental models, snapshots, tests, macros, CI/CD.</span></li>
           <li><span class="dot dot-green"></span><span><b>Python data engineering:</b> extract-load tooling, S3, CI-based orchestration, owned end to end with no platform team behind you.</span></li>
-          <li><span class="dot dot-green"></span><span><b>You have defined a business KPI and defended it</b> to people who are not engineers. This is the one that decides it for us.</span></li>
+          <li><span class="dot dot-green"></span><span><b>You have defined a business KPI and defended it</b> to people who are not engineers. This carries the most weight in our assessment.</span></li>
           <li><span class="dot dot-green"></span><span><b>Analytical rigour:</b> cohorts, correct denominators, sample size stated before findings.</span></li>
           <li><span class="dot dot-green"></span><span><b>Product event streams</b> (PostHog, Amplitude, Segment, Mixpanel or similar), including how identity and group association break.</span></li>
           <li><span class="dot dot-green"></span><span><b>Clear written English</b> and the autonomy to work from a written brief.</span></li></ul>
@@ -493,14 +493,14 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
       <div class="section-label">Your first big challenge</div>
       <h2 class="section-title">Make the past <em>stop changing</em></h2>
       <p>Our pipeline recomputes all history every night from today's state. That means every trend chart we draw is a re-derivation of the past rather than a record of it, and a six-month trend quietly rewrites itself while nobody is watching. Leadership asks for those trends. They deserve an answer that holds still.</p>
-      <p>Fixing it is a design problem before it is an engineering one: an immutable point-in-time snapshot layer, one row per firm per day, written once and never recomputed, plus the incremental models to make it affordable. Then the harder half. Our customer health score has ten weighted components, and its definition has never been written down in one authoritative place. Somebody has to decide what it means, defend that decision to people who rely on the number, and then make the number reproducible.</p>
-      <p>It is a good problem because it is real, it is visible, and it is unowned. It is a hard problem because you cannot fix it quietly: changing what a number means is a conversation with the business, not just a pull request.</p>
+      <p>The fix is an immutable point-in-time snapshot layer, one row per firm per day, written once and never recomputed, plus the incremental models to make it affordable. Then the harder half. Our customer health score has ten weighted components, and its definition has never been written down in one authoritative place. Somebody has to decide what it means, defend that decision to people who rely on the number, and then make the number reproducible.</p>
+      <p>The problem is real, visible and unowned. You cannot fix it quietly: changing what a number means is a conversation with the business, not just a pull request.</p>
     </div>
     <div>
       <div class="card-dark">
         <span class="label-caps" style="color:var(--accent-bright);">What you are walking into</span>
         <p style="margin-top:.8rem;">A working ClickHouse and dbt platform that has grown fast under real load. Two pieces of work are already queued: moving the customer-health models to incremental mode, and building the point-in-time snapshot layer. Beyond that, the raw layer, the warehouse architecture and the metric definitions are all unowned, and the first month is yours to spend finding out what is actually fragile.</p>
-        <p style="margin:0;">You would not be inheriting a mess. You would be inheriting something that works and has never had a single person responsible for whether it is right.</p>
+        <p style="margin:0;">You would be inheriting something that works and has never had a single person responsible for whether it is right.</p>
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.5rem;">
         <span class="pill-dark">ClickHouse</span>
@@ -575,7 +575,7 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
     <div>
       <div class="section-label">What you get</div>
       <h2 class="section-title">Ownership, and the <em>room to use it</em></h2>
-      <p class="lede">The honest pitch for this role is not a perks list. It is that you would be the only person responsible for whether the numbers this company runs on are right, with a direct line to the people who act on them and nobody in between.</p>
+      <p class="lede">You would be the only person responsible for whether the numbers this company runs on are right, with a direct line to the people who act on them.</p>
       <p class="lede">We will talk through the full package on the first call.</p>
     </div>
     <div>
@@ -633,7 +633,7 @@ footer a{color:var(--on-dark-faint);text-decoration:none;}
       <div class="card"><div class="pnum">03</div><h4 style="margin-top:.4rem;">Make Mistakes. Create Success.</h4><p>Mistakes are part of progress. Rather than avoiding them, we embrace errors as opportunities to learn and propel us even faster towards success. This mindset empowers us to innovate fearlessly and achieve unprecedented results.</p></div>
       <div class="card"><div class="pnum">04</div><h4 style="margin-top:.4rem;">Do What Needs To Be Done</h4><p>Leadership at JUPUS means doing what needs to be done, regardless of position. Everyone steps up as a doer, tackling any task to ensure our collective success.</p></div>
       <div class="card"><div class="pnum">05</div><h4 style="margin-top:.4rem;">Assume Everyone is Wrong</h4><p>We are changing a centuries-old industry forever. Therefore, we relentlessly question and dismantle established norms, to create unprecedented breakthroughs and transformative change.</p></div>
-      <div class="card tinted"><div class="pnum">06</div><h4 style="margin-top:.4rem;">Build where it is not settled</h4><p>This role exists because nobody owns the technical half of data yet. That is uncomfortable and it is also the opportunity: the conventions, the definitions and the standards are not written down, and whoever takes this seat writes them.</p></div>
+      <div class="card tinted"><div class="pnum">06</div><h4 style="margin-top:.4rem;">Build where it is not settled</h4><p>This role exists because nobody owns the technical half of data yet. The conventions, the definitions and the standards are not written down. Whoever takes this seat writes them.</p></div>
     </div>
   </div>
 </section>
